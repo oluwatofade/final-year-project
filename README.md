@@ -1,2 +1,2 @@
-# final-year-project
-Machine learning determinants of loan privileges
+# loan_prediction
+Undergraduate Loan prediction project
