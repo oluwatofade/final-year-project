@@ -1,2 +1,2 @@
 # final-year-project
-machine learning determinants of loan privileges
+Machine learning determinants of loan privileges
