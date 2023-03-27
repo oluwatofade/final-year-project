@@ -26,15 +26,15 @@ with sl.form('loan_form',clear_on_submit=True):
     gender_dict = {'Male':1,'Female':0}
     gender = gender_dict[gender]
 
-    married = sl.radio('Are You Married',['Yes','No'])
+    married = sl.radio('Are You Married?',['Yes','No'])
     married_dict = {'Yes':1,'No':0}
     married =  married_dict[married]
 
-    graduate = sl.radio('Are You a Graduate',['Yes','No'])
+    graduate = sl.radio('Are You a Graduate?',['Yes','No'])
     graduate_dict = {'Yes':0,'No':1}
     graduate =  graduate_dict[graduate]
 
-    employed = sl.radio('Are You Self Employed',['Yes','No'])
+    employed = sl.radio('Are You Self Employed?',['Yes','No'])
     employed_dict = {'Yes':1,'No':0}
     employed =  employed_dict[employed]
 
@@ -64,8 +64,8 @@ with sl.form('loan_form',clear_on_submit=True):
     bank = sl.selectbox('Bank',['First Bank of Nigeria','First City Monument Bank','Access Bank'])
     bank_dict = {'First Bank of Nigeria':'011','First City Monument Bank':'214','Access Bank':'044'}
     bank = bank_dict[bank]
-    account_number=sl.text_input('Input Guarantor Account Number')
-    phone = sl.text_input('Input Phone Number')
+    account_number=sl.text_input('Input Guarantors Account Number')
+    phone = sl.text_input('Input Guarantors Phone Number')
 
     
     submitted = sl.form_submit_button("Submit")
@@ -83,7 +83,7 @@ with sl.form('loan_form',clear_on_submit=True):
                 guarantor_name = resp['account_name']
                 sl.markdown(f'Please wait while we contact {guarantor_name} to verify your details \
                     and upon approval the loan will be paid into the\
-                        guarantor account :heart_eyes:')
+                        guarantors account :heart_eyes:')
 
             else:
                 sl.markdown('Kindly verify the account details :disappointed:')
