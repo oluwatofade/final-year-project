@@ -41,7 +41,7 @@ with sl.form('loan_form',clear_on_submit=True):
     dependents = sl.number_input('Input number of Dependents')
     applicantincome =  sl.number_input('Input Your Income')
     coapplicantincome =  sl.number_input('Input spouse income else input 0')
-    loanamount = sl.number_input('Input Loan AmountIn multiple of Hundred\'s of Thousands)')
+    loanamount = sl.number_input('Input Loan Amount In multiple of Hundred\'s of Thousands)')
     totalhouseincome = applicantincome + coapplicantincome
 
     scalable_data = [dependents,applicantincome,coapplicantincome,loanamount,totalhouseincome]
